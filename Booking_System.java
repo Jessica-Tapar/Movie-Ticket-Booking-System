@@ -113,7 +113,7 @@ public class Booking_System {
         System.out.println("\n------------------------------------------\n");
         for(int i=1;i<=100;i++)
         {
-            if(!checkavailability(i)) System.out.print("+"+" ");
+            if(!checkavailability(i)) System.out.print("+"+"   ");
             else System.out.print("="+"   ");
             if(i%10==0) System.out.println();
         }
