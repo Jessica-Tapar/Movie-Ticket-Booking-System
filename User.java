@@ -3,7 +3,8 @@ package com.company;
 import com.company.Linked_List;
 
 public class User {
-    Linked_List seats = new Linked_List();
+    Linked_List<Integer> seats = new Linked_List<>();
+    private int token_no;
     private int sprice;
     private String Name;
     private String Movie;
@@ -53,5 +54,18 @@ public class User {
     }
     public void setTime(int time) {
         this.time = time;
+    }
+
+    public int getToken_no() {
+        return token_no;
+    }
+
+    public void setToken_no(int token_no) {
+        this.token_no = token_no;
+    }
+
+    @Override
+    public String toString() {
+        return "Token no.: "+ token_no +"\nName: " + Name +"\nMobile Number: "+number+ "\nMovie Name: " + Movie + "\nScreen number: "+Screen+"\nNumber of seats booked: "+this.seats.size()+"\nSeats Booked: "+this.seats+"\nTotal cost: " + Tprice + "/-.\n";
     }
 }
