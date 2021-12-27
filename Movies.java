@@ -14,7 +14,6 @@ public class Movies {
     Scanner sc = new Scanner(System.in);
 
     public void choose_movie(){
-        System.out.println("Choose movie from following list: ");
         list();
         int option = sc.nextInt();
         option-=1;
